@@ -1,0 +1,60 @@
+/*CSS DO TÍTULO DO PROGRAMA*/
+#titulo {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+/*CSS DO TEMPLATE DA CALCULADORA*/
+#calc {
+    position: relative;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    height: 300px;
+    width: 260px;
+    border-radius: 10px;
+    background-color: rgb(94, 94, 94);
+}
+
+/*CSS DO INPUT DE VISOR DA CALCULADORA*/
+#visor {
+    width: 67.5%;
+    height: 40px;
+    margin-left: 1.5%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    padding-left: 5px;
+    outline: none;
+}
+
+/*CSS DAS LINHAS DA CALCULADORA*/
+.line {
+    display: block;
+}
+
+/*CSS DOS BOTÕES DA CALCULADORA*/
+.tecla {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    height: 50px;
+    text-align: center;
+    width: 20%;
+    margin: 4px;
+    position: relative;
+    cursor: pointer;
+    border: 0.5px solid rgb(70, 70, 70);
+    border-radius: 5px;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+/*EFEITO CSS DE SOMBREAMENTO DOS BOTÕES DA CALCULADORA*/
+.tecla:hover {
+    box-shadow: 0 0 40px 40px rgb(94, 94, 94) inset;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <!--ROBOTO FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--TÍTULO DO PROGRAMA-->
+    <div id="titulo">
+        <h1>
+            CALCULADORA
+        </h1>    
+    </div>
+
+    <!--TEMPLATE DA CALCULADORA-->
+    <div id="calc">
+        <!--LINHAS DE BOTÕES E VISOR DA CALCULADORA-->
+
+        <label class="line" for="">
+            <input id="visor" readonly="true" type="text">
+            <button class="tecla" id="equals" style="color: red" onclick="teclaAC()">AC</button> 
+        </label>
+        
+        <label class="line" for="">
+            <button onclick="tecla7()" id="seven" class="tecla">7</button>
+            <button onclick="tecla8()" id="eight" class="tecla">8</button>
+            <button onclick="tecla9()" id="nine" class="tecla">9</button>
+            <button onclick="teclaDiv()" id="divide" class="tecla">÷</button>
+        </label>
+
+        <label class="line" for="">
+            <button onclick="tecla4()" id="four" class="tecla">4</button>
+            <button onclick="tecla5()" id="five" class="tecla">5</button>
+            <button onclick="tecla6()" id="six" class="tecla">6</button>
+            <button onclick="teclaMult()" id="multiplier" class="tecla">x</button>
+        </label>
+
+        <label class="line" for="">
+            <button onclick="tecla1()" id="one" class="tecla">1</button>
+            <button onclick="tecla2()" id="two" class="tecla">2</button>
+            <button onclick="tecla3()" id="three" class="tecla">3</button>
+            <button onclick="teclaSub()" id="sub" class="tecla">-</button>
+        </label>
+
+        <label class="line" for="">
+            <button onclick="tecla0()" id="zero" class="tecla">0</button>
+            <button onclick="teclaCE()" id="comma" class="tecla">CE</button>
+            <button onclick="teclaEquals()" id="equals" class="tecla">=</button>
+            <button onclick="teclaPlus()" id="sum" class="tecla">+</button>
+        </label>
+    </div>
+</body>
+</html>
